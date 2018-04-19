@@ -6,11 +6,22 @@ ESP-32 Component to parse JSON strings
 
 <b>int jsonTagFinder(char *jsonStringToSearch, char *tagToFind, char *stringToStoreValue, int maxValueLength);</b>
 
-given
+given:
 * a pointer to JSON string to search, jsonStringToSearch
 * a pointer to string of the key to find, tagToFind
 * the maximum length of the value, aka maximum number of characters of the value to copy
 
-It returns:
-* The found value in stringToStoreValue - pointer to string where the found value should be copied to
+it returns:
 * return value - -1 if not found and 0 if found
+* the found value in stringToStoreValue - pointer to string where the found value should be copied to
+
+<b>int jsonGetArray(char *jsonStringToSearch, char *tagToFind, int *arrayToStoreValues, int maxArrayLength);</b>
+
+given:
+* a pointer to JSON string to search, jsonStringToSearch
+* a pointer to string of the key to find, tagToFind
+* the maximum length of the array to find, maxArrayLength
+
+it returns:
+* return value - -1 if not found and 0 if found
+* the found array copied to arrayToStoreValues, up to maxArrayLength values
