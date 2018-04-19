@@ -1,6 +1,6 @@
 # jsonFunctions
 
-ESP-32 Component to parse JSON strings
+ESP-32 eps-idf Component to parse JSON strings
 
 # Functions
 
