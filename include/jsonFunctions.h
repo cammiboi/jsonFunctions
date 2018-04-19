@@ -3,6 +3,8 @@
 
 #include <string.h>
 
+//JSON functions
+
 //looks through a JSON string and tries to find a certain tag
 //returns -1 if not found and 0 if found
 //specify the maximum allowed length of the value saved into stringToStoreValue
