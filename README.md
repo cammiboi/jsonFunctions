@@ -4,7 +4,7 @@ ESP-32 Component to parse JSON strings
 
 # Functions
 
-int jsonTagFinder(char *jsonStringToSearch, char *tagToFind, char *stringToStoreValue, int maxValueLength);
+<b>int jsonTagFinder(char *jsonStringToSearch, char *tagToFind, char *stringToStoreValue, int maxValueLength);</b>
 
 given
 * a pointer to JSON string to search, jsonStringToSearch
@@ -12,5 +12,5 @@ given
 * the maximum length of the value, aka maximum number of characters of the value to copy
 
 It returns:
-* stringToStoreValue - pointer to string where the found value should be copied to
+* The found value in stringToStoreValue - pointer to string where the found value should be copied to
 * return value - -1 if not found and 0 if found
