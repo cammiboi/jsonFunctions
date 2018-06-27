@@ -11,8 +11,10 @@
 
 int jsonTagFinder(char *jsonStringToSearch, char *tagToFind, char *stringToStoreValue, int maxValueLength);
 
-// saves the json array (must be of numbers) at a given tag in an interger array 
+// saves the json array (must be of numbers) at a given tag in an interger array
 
 int jsonGetArray(char *jsonStringToSearch, char *tagToFind, int *arrayToStoreValues, int maxArrayLength);
+
+int jsonArrayElementFinder(char *jsonStringToSearch, char *tagToFind, char *stringToStoreValue, int maxValueLength, int elementNumberToFind);
 
 #endif
